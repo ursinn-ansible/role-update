@@ -3,6 +3,7 @@
   ansible.builtin.package:
     name: '*'
     state: latest
+    update_cache: true
 
 - name: Check if a reboot is needed
   ansible.builtin.stat: 
